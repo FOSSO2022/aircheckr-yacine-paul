@@ -25,7 +25,7 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/aircheckr-yacine-paul'),
+      dir: require('path').join(__dirname, './coverage/webdev'),
       subdir: '.',
       reporters: [
         { type: 'html' },
