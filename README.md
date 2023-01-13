@@ -4,8 +4,8 @@ We have worked on [aircheck API](https://www.aircheckr.com/api_docs/#/) and make
 
 ## Author 
 `Yacine FOSSO`
-Paul CONTAL
-Kahina IDDIR
+`Paul CONTAL`
+`Kahina IDDIR`
 
 
 ## Development server
