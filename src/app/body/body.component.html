@@ -1,0 +1,19 @@
+<div>
+
+
+
+
+</div>
+<div id="carte">
+</div>
+<div>
+    <form (onSubmit)="submitForm()" >
+     Entrez le nom d'une ville : <input type="text" name="nomville" #nomville ><button >soumettre ville</button>
+    </form>
+    <p>ou</p>
+    <form (onSubmit)="submitform2()">
+    entrez la latitude: <input type="number" name="latitude"><br>
+    entrez la longitude: <input type="number" name="longitude"><br>
+    <button (click)="fonctioncoord()">soumettre coordonnées</button>
+  </form>
+</div>
