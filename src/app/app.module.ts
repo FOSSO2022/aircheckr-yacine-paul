@@ -13,6 +13,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { NgbPaginationModule, NgbAlertModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { Ng2SearchPipe } from 'ng2-search-filter';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
+import { AirLeuvenComponent } from './air-leuven/air-leuven.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +23,8 @@ import { AboutComponent } from './about/about.component';
     BodyComponent,
     FooterComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    AirLeuvenComponent
   ],
   imports: [
     BrowserModule,
@@ -30,6 +34,7 @@ import { AboutComponent } from './about/about.component';
     HttpClientModule,
     FormsModule,
     NgbModule,
+    Ng2SearchPipeModule
 
   ],
   providers: [],

@@ -34,11 +34,8 @@ ListCityNameFrance !: any
 ngOnInit() {
 
 
-  this.fetchStatisticLeuvent();
+
   this.fetchCityInFrance();
-  this.fetchQualityAirToulon();
-
-
 
 
   if (navigator.geolocation){
@@ -65,11 +62,7 @@ ngOnInit() {
 
 }
 
-  private fetchStatisticLeuvent(){
-    this.TerritoryStreetService.getStatisticLeuven().subscribe(data =>
-      { this.statistics = data
-        console.log('statistics fecthed', this.statistics)})
-  }
+
 
   private fetchCityInFrance(){
     this.TerritoryStreetService.getNameCityInFrance().subscribe(data =>
@@ -77,11 +70,6 @@ ngOnInit() {
       console.log('City in France Fetched',this.ListCityNameFrance)})
   }
 
-  private fetchQualityAirToulon(){
-    this.TerritoryStreetService.getQualityAirToulon().subscribe(data =>
-      {this.qualityAir = data
-      console.log('AirQuality in Toulon', this.qualityAir)})
-  }
 
 
 }

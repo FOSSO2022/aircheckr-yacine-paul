@@ -53,11 +53,19 @@
               "src/styles.css",
               "src/dataTables.bulma.min.css",
               "node_modules/leaflet/dist/leaflet.css",
-              "node_modules/bulma/css/bulma.min.css"
+              "node_modules/bulma/css/bulma.min.css",
+              "src/admin.css", "src/all.min.css",
+              "src/aside.css","src/bulma-divider.min.css",
+              "src/cards.css","src/cheatsheet.css","src/contact.css",
+              "src/forum.css","src/ghost-blog.css","src/hello-parallax.css",
+              "src/hero.css","src/inbox.css","src/instaAlbum.css","src/prism.css","src/register.css", "src/tabs.css",
+              "src/showcase.css","src/main.min.css"
             ],
             "scripts": ["node_modules/jquery/dist/jquery.min.js",
             "node_modules/bootstrap/dist/js/bootstrap.min.js", "node_modules/popper.js/dist/umd/popper.min.js"
-          ,"node_modules/bootstrap/dist/js/bootstrap.min.js"]
+          ,"node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "src/OverlayScrollbars.min.js","src/bulma-js.js",
+      "src/kanban-switch.js","src/kanban.js","src/showcase.js","src/tabs.js","src/wild.js"]
           },
           "configurations": {
             "production": {
