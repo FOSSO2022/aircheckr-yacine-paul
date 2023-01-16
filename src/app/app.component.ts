@@ -1,3 +1,4 @@
+import { SelectorContext } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 import * as L from 'leaflet';
@@ -6,8 +7,17 @@ import { TerritorystreetService } from './services/territorystreet.service';
 
 @Component({
   selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
+  template:
+  `
+  <app-header></app-header>
+  <router-outlet></router-outlet>
+  <footer class="footer">
+  <div class="container content has-text-centered">
+  <p>Made with  by Yacine Paul and Kahina</p>
+  </div>
+  </footer>`
+
 })
 
 // Implémenter OnInit
@@ -15,8 +25,6 @@ export class AppComponent implements OnInit {
 
 constructor(private TerritoryStreetService : TerritorystreetService){}
 title ='api-aircheckr';
-listcountry !: any
-listcountry$: any
 coordonnees !: any
 statistics !: any
 qualityAir !: any
@@ -25,10 +33,11 @@ ListCityNameFrance !: any
 // Fonction d'initialisation du composant.
 ngOnInit() {
 
-  this.fetchTerritory();
+
   this.fetchStatisticLeuvent();
   this.fetchCityInFrance();
   this.fetchQualityAirToulon();
+
 
 
 
@@ -55,13 +64,6 @@ ngOnInit() {
 
 
 }
-private fetchTerritory(){
-  this.TerritoryStreetService.getCountry().subscribe(data=>
-    {this.listcountry = data
-    console.log('Territory fetched', this.listcountry)})
-
-  }
-
 
   private fetchStatisticLeuvent(){
     this.TerritoryStreetService.getStatisticLeuven().subscribe(data =>
@@ -80,5 +82,6 @@ private fetchTerritory(){
       {this.qualityAir = data
       console.log('AirQuality in Toulon', this.qualityAir)})
   }
+
 
 }

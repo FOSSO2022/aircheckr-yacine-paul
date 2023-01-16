@@ -9,7 +9,7 @@ import { Country } from '../model/territory';
 })
 export class TerritorystreetService {
 
-  constructor(private httpclient: HttpClient) { }
+  constructor(public httpclient: HttpClient) { }
   httpOptions =
   { headers: new HttpHeaders({
     'x-access-token': 'eyJhbGciOiJIUzI1NiJ9.MDQxOTA0ZjAtOTI5ZS0xMWVkLTg5MjAtNWY0OTdjOGNlNWMz.UifRLCyvY2_hQi4YeuQIQ7yWNuDS7KbSxseWmS_PmfI'
